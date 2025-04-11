@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Hash.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="enderecoSMTP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">macoratti.smtp.com</Value>
+    </Setting>
+    <Setting Name="portaSMTP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">53</Value>
+    </Setting>
+    <Setting Name="emailSMTP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">macoratti@yahoo.com</Value>
+    </Setting>
+    <Setting Name="senhaSMTP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jv123</Value>
+    </Setting>
+    <Setting Name="LoginsConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=c:\dados\Logins&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=c:\dados\Logins</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

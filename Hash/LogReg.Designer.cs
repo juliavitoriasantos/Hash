@@ -30,21 +30,21 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            txtSenhaL = new TextBox();
-            txtUserL = new TextBox();
-            lblUserL = new Label();
-            lblSenhaL = new Label();
             btnLogin = new Button();
-            btnRegistro = new Button();
-            lblUserR = new Label();
-            lblEmailR = new Label();
-            lblConfirmarR = new Label();
-            lblSEnhaR = new Label();
-            txtEmailR = new TextBox();
-            txtConfirmarR = new TextBox();
-            txtSenhaR = new TextBox();
+            lblSenhaL = new Label();
+            lblUserL = new Label();
+            txtUserL = new TextBox();
+            txtSenhaL = new TextBox();
+            tabPage2 = new TabPage();
             txtUserR = new TextBox();
+            txtSenhaR = new TextBox();
+            txtConfirmarR = new TextBox();
+            txtEmailR = new TextBox();
+            lblSEnhaR = new Label();
+            lblConfirmarR = new Label();
+            lblEmailR = new Label();
+            lblUserR = new Label();
+            btnRegistro = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -75,6 +75,48 @@
             tabPage1.Text = "Login";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnLogin
+            // 
+            btnLogin.Location = new Point(376, 296);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 4;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // lblSenhaL
+            // 
+            lblSenhaL.AutoSize = true;
+            lblSenhaL.Location = new Point(322, 168);
+            lblSenhaL.Name = "lblSenhaL";
+            lblSenhaL.Size = new Size(39, 15);
+            lblSenhaL.TabIndex = 3;
+            lblSenhaL.Text = "Senha";
+            // 
+            // lblUserL
+            // 
+            lblUserL.AutoSize = true;
+            lblUserL.Location = new Point(322, 83);
+            lblUserL.Name = "lblUserL";
+            lblUserL.Size = new Size(47, 15);
+            lblUserL.TabIndex = 2;
+            lblUserL.Text = "Usuário";
+            // 
+            // txtUserL
+            // 
+            txtUserL.Location = new Point(442, 80);
+            txtUserL.Name = "txtUserL";
+            txtUserL.Size = new Size(100, 23);
+            txtUserL.TabIndex = 1;
+            // 
+            // txtSenhaL
+            // 
+            txtSenhaL.Location = new Point(442, 165);
+            txtSenhaL.Name = "txtSenhaL";
+            txtSenhaL.Size = new Size(100, 23);
+            txtSenhaL.TabIndex = 0;
+            // 
             // tabPage2
             // 
             tabPage2.Controls.Add(txtUserR);
@@ -94,83 +136,33 @@
             tabPage2.Text = "Registro";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txtSenhaL
+            // txtUserR
             // 
-            txtSenhaL.Location = new Point(442, 165);
-            txtSenhaL.Name = "txtSenhaL";
-            txtSenhaL.Size = new Size(100, 23);
-            txtSenhaL.TabIndex = 0;
+            txtUserR.Location = new Point(396, 51);
+            txtUserR.Name = "txtUserR";
+            txtUserR.Size = new Size(100, 23);
+            txtUserR.TabIndex = 8;
             // 
-            // txtUserL
+            // txtSenhaR
             // 
-            txtUserL.Location = new Point(442, 80);
-            txtUserL.Name = "txtUserL";
-            txtUserL.Size = new Size(100, 23);
-            txtUserL.TabIndex = 1;
+            txtSenhaR.Location = new Point(396, 103);
+            txtSenhaR.Name = "txtSenhaR";
+            txtSenhaR.Size = new Size(100, 23);
+            txtSenhaR.TabIndex = 7;
             // 
-            // lblUserL
+            // txtConfirmarR
             // 
-            lblUserL.AutoSize = true;
-            lblUserL.Location = new Point(322, 83);
-            lblUserL.Name = "lblUserL";
-            lblUserL.Size = new Size(47, 15);
-            lblUserL.TabIndex = 2;
-            lblUserL.Text = "Usuário";
+            txtConfirmarR.Location = new Point(396, 152);
+            txtConfirmarR.Name = "txtConfirmarR";
+            txtConfirmarR.Size = new Size(100, 23);
+            txtConfirmarR.TabIndex = 6;
             // 
-            // lblSenhaL
+            // txtEmailR
             // 
-            lblSenhaL.AutoSize = true;
-            lblSenhaL.Location = new Point(322, 168);
-            lblSenhaL.Name = "lblSenhaL";
-            lblSenhaL.Size = new Size(39, 15);
-            lblSenhaL.TabIndex = 3;
-            lblSenhaL.Text = "Senha";
-            // 
-            // btnLogin
-            // 
-            btnLogin.Location = new Point(376, 296);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(75, 23);
-            btnLogin.TabIndex = 4;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += btnLogin_Click;
-            // 
-            // btnRegistro
-            // 
-            btnRegistro.Location = new Point(354, 304);
-            btnRegistro.Name = "btnRegistro";
-            btnRegistro.Size = new Size(75, 23);
-            btnRegistro.TabIndex = 0;
-            btnRegistro.Text = "Registrar";
-            btnRegistro.UseVisualStyleBackColor = true;
-            // 
-            // lblUserR
-            // 
-            lblUserR.AutoSize = true;
-            lblUserR.Location = new Point(205, 54);
-            lblUserR.Name = "lblUserR";
-            lblUserR.Size = new Size(47, 15);
-            lblUserR.TabIndex = 1;
-            lblUserR.Text = "Usuário";
-            // 
-            // lblEmailR
-            // 
-            lblEmailR.AutoSize = true;
-            lblEmailR.Location = new Point(205, 217);
-            lblEmailR.Name = "lblEmailR";
-            lblEmailR.Size = new Size(36, 15);
-            lblEmailR.TabIndex = 2;
-            lblEmailR.Text = "Email";
-            // 
-            // lblConfirmarR
-            // 
-            lblConfirmarR.AutoSize = true;
-            lblConfirmarR.Location = new Point(205, 160);
-            lblConfirmarR.Name = "lblConfirmarR";
-            lblConfirmarR.Size = new Size(61, 15);
-            lblConfirmarR.TabIndex = 3;
-            lblConfirmarR.Text = "Confirmar";
+            txtEmailR.Location = new Point(396, 209);
+            txtEmailR.Name = "txtEmailR";
+            txtEmailR.Size = new Size(100, 23);
+            txtEmailR.TabIndex = 5;
             // 
             // lblSEnhaR
             // 
@@ -181,33 +173,42 @@
             lblSEnhaR.TabIndex = 4;
             lblSEnhaR.Text = "Senha";
             // 
-            // txtEmailR
+            // lblConfirmarR
             // 
-            txtEmailR.Location = new Point(396, 209);
-            txtEmailR.Name = "txtEmailR";
-            txtEmailR.Size = new Size(100, 23);
-            txtEmailR.TabIndex = 5;
+            lblConfirmarR.AutoSize = true;
+            lblConfirmarR.Location = new Point(205, 160);
+            lblConfirmarR.Name = "lblConfirmarR";
+            lblConfirmarR.Size = new Size(61, 15);
+            lblConfirmarR.TabIndex = 3;
+            lblConfirmarR.Text = "Confirmar";
             // 
-            // txtConfirmarR
+            // lblEmailR
             // 
-            txtConfirmarR.Location = new Point(396, 152);
-            txtConfirmarR.Name = "txtConfirmarR";
-            txtConfirmarR.Size = new Size(100, 23);
-            txtConfirmarR.TabIndex = 6;
+            lblEmailR.AutoSize = true;
+            lblEmailR.Location = new Point(205, 217);
+            lblEmailR.Name = "lblEmailR";
+            lblEmailR.Size = new Size(36, 15);
+            lblEmailR.TabIndex = 2;
+            lblEmailR.Text = "Email";
             // 
-            // txtSenhaR
+            // lblUserR
             // 
-            txtSenhaR.Location = new Point(396, 103);
-            txtSenhaR.Name = "txtSenhaR";
-            txtSenhaR.Size = new Size(100, 23);
-            txtSenhaR.TabIndex = 7;
+            lblUserR.AutoSize = true;
+            lblUserR.Location = new Point(205, 54);
+            lblUserR.Name = "lblUserR";
+            lblUserR.Size = new Size(47, 15);
+            lblUserR.TabIndex = 1;
+            lblUserR.Text = "Usuário";
             // 
-            // txtUserR
+            // btnRegistro
             // 
-            txtUserR.Location = new Point(396, 51);
-            txtUserR.Name = "txtUserR";
-            txtUserR.Size = new Size(100, 23);
-            txtUserR.TabIndex = 8;
+            btnRegistro.Location = new Point(354, 304);
+            btnRegistro.Name = "btnRegistro";
+            btnRegistro.Size = new Size(75, 23);
+            btnRegistro.TabIndex = 0;
+            btnRegistro.Text = "Registrar";
+            btnRegistro.UseVisualStyleBackColor = true;
+            btnRegistro.Click += btnRegistro_Click;
             // 
             // LogReg
             // 
@@ -217,6 +218,7 @@
             Controls.Add(tabControl1);
             Name = "LogReg";
             Text = "LogReg";
+            Load += LogReg_Load_1;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
